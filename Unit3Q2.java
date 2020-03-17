@@ -1,35 +1,33 @@
-
 public class Unit3Q2
 {
-  public static void main(int x, int y)
-  {
-      //Option 1
-      int result = 0;
-      if (x > y)
-      {
-          result = x - y;
-          System.out.print(result);
-      }
-      else if (x < y){
-       result = y - x;
-       System.out.print(result);
-      }
-      else
-      {
-          System.out.print(result);
+   public static void main()
+   {
+     String first = new String("duck");
+     String second = new String("duck");
+     String third = new String("goose");
+
+     if (first == second)
+     {
+         System.out.print("A");
         }
-    
-    //Option 2
-   /* if (x<y)
-    {
-        System.out.println(y-x);
+        else if (second == third)
+        {
+            System.out.print("B");
+        }
+        else if (first.equals(second))
+        {
+            System.out.print("C");
+        }
+        else if (second.equals(third))
+        {
+            System.out.print("D"); //Prints out D when run
+        }
+        else
+        {
+            System.out.print("E");
+        }
+
+     
+     
     }
-    else 
-    {
-        System.out.println(x-y);
-    }
-   */
-  
-  //Test- try negative, positive, and 0. All numbers will produce same output for both options
-}
 }
