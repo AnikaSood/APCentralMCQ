@@ -9,15 +9,22 @@ public class unit6MC
 {
     public  static void main()
     {
-   int[] arr = {1, 2, 3, 4, 5};
-
-for (int x : arr)
-
+        int numArr[] = {1, 3, 5, 7, 9};
+        System.out.println("Num arr before the loop has:"+numArr.toString());
+        
+for (int k = 0; k < numArr.length / 2; k++)
 {
 
-System.out.print(x + 3);
+int temp = numArr[k];
+
+numArr[k] = numArr[numArr.length - k - 1];
+
+numArr[numArr.length - k - 1] = temp;
+        System.out.println("temp has:"+temp);
+
 
 }
+        System.out.println("Num arr  after the loop has"+numArr.toString());
 
  }
   
